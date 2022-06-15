@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (child != 0 || status == 0)
 		{
-			write(1, "($) ", 4);
+			write(1, "$ ", 2);
 			status = 1;
 		}
 		len = input(&str);
