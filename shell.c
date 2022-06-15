@@ -34,7 +34,7 @@ int main(void)
 		{
 			if (execve(av[0], av, environ) == -1)
 			{
-				perror("./shell");
+				perror(av[0]);
 				break;
 			}
 		}
